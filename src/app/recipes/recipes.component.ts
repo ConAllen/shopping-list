@@ -11,11 +11,11 @@ export class RecipesComponent implements OnInit {
 
   finalSelectedRecipe: Recipe;
   constructor() {
-    console.log(this.finalSelectedRecipe);
 
    }
 
   ngOnInit() {
+
   }
 
   // selectedRecipe( $event) {

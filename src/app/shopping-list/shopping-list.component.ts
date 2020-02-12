@@ -9,6 +9,7 @@ import { Indgredient } from 'src/app/shared/ingredient.model';
 })
 export class ShoppingListComponent implements OnInit {
 
+  newIngredient: Indgredient;
   ingredients: Indgredient[] = [
 
     new Indgredient ('Tomatoes', 10),
@@ -22,4 +23,7 @@ export class ShoppingListComponent implements OnInit {
   ngOnInit() {
   }
 
+  onIngredientAdded( newIngredient: Indgredient ) {
+    this.ingredients.push(newIngredient);
+  }
 }

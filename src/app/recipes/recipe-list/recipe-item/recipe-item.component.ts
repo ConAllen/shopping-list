@@ -9,7 +9,7 @@ import { Recipe } from '../../recipe.modal';
 export class RecipeItemComponent implements OnInit {
 
   @Input() recipe: Recipe;
-  @Output() recipeSelected = new EventEmitter<void>();
+  @Output() recipeSelected = new EventEmitter<Recipe>();
 
   constructor() { }
 
@@ -17,8 +17,8 @@ export class RecipeItemComponent implements OnInit {
 
   }
 
-  onSelected() {
-    this.recipeSelected.emit();
+  onSelected(recipe: Recipe) {
+    this.recipeSelected.emit(recipe);
   }
 
 }

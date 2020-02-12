@@ -10,7 +10,10 @@ export class RecipeDetailComponent implements OnInit {
 
   @Input() recipe: Recipe;
 
-  constructor() { }
+  constructor() {
+    console.log(this.recipe);
+
+   }
 
   ngOnInit() {
   }
